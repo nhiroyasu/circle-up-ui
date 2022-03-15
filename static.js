@@ -10,14 +10,14 @@ export const contents = [
   ),
   new Content(
     'Orange',
-    'An orange is a fruit of various citrus species in the family Rutaceae (see list of plants known as orange); it primarily refers to Citrus × sinensis, which is also called sweet orange, to distinguish it from the related Citrus × aurantium, referred to as bitter orange.',
+    'An orange is a fruit of various citrus species in the family Rutaceae (see list of plants known as orange); it primarily refers to Citrus × sinensis, which is also called sweet orange ...',
     '#333333',
     '#F27830',
     '#F2D49B'
   ),
   new Content(
     'Banana',
-    'A banana is an elongated, edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa. In some countries, bananas used for cooking may be called "plantains", distinguishing them from dessert bananas.',
+    'A banana is an elongated, edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa. In some countries, ...',
     '#333333',
     '#F2B705',
     '#F2DA91'
@@ -31,14 +31,14 @@ export const contents = [
   ),
   new Content(
     'Blueberry',
-    'Blueberries are a widely distributed and widespread group of perennial flowering plants with blue or purple berries. They are classified in the section Cyanococcus within the genus Vaccinium.',
+    'Blueberries are a widely distributed and widespread group of perennial flowering plants with blue or purple berries. They are classified in the section ...',
     '#FFFFFF',
     '#272A59',
     '#B6C5F2'
   ),
   new Content(
     'Peach',
-    'The peach (Prunus persica) is a deciduous tree native to the region of Northwest China between the Tarim Basin and the north slopes of the Kunlun Mountains, where it was first domesticated and cultivated.',
+    'The peach (Prunus persica) is a deciduous tree native to the region of Northwest China between the Tarim Basin and the north slopes of the Kunlun Mountains ...',
     '#333333',
     '#FF8598',
     '#FFC0A9'

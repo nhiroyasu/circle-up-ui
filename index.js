@@ -4,7 +4,7 @@ import anime from 'animejs';
 import { applyByContent, applyInitView } from './ui.js';
 import { contents } from './static.js';
 
-const PHONE_WIDTH = 360;
+const PHONE_WIDTH = 300;
 
 class CirclePosition {
   constructor(radius, separation) {
@@ -36,10 +36,10 @@ const BUTTON_HEIGHT = 60;
 anime({
   targets: '.button',
   top: (target, index, length) => {
-    return circlePosition.calcY(index) + BUTTON_HEIGHT / 4 + 480;
+    return circlePosition.calcY(index) + BUTTON_HEIGHT / 4 + 380;
   },
   left: (target, index, length) => {
-    return circlePosition.calcX(index) + BUTTON_WIDTH / 4;
+    return circlePosition.calcX(index) + (PHONE_WIDTH - BUTTON_WIDTH) / 2;
   },
   easing: 'linear',
   duration: 0,
@@ -51,11 +51,11 @@ function buildCircleAnimation(count) {
     targets: '.button',
     top: (target, index, length) => {
       let reIndex = index + (count % length);
-      return circlePosition.calcY(reIndex) + BUTTON_HEIGHT / 4 + 480;
+      return circlePosition.calcY(reIndex) + BUTTON_HEIGHT / 4 + 380;
     },
     left: (target, index, length) => {
       let reIndex = index + (count % length);
-      return circlePosition.calcX(reIndex) + BUTTON_WIDTH / 4;
+      return circlePosition.calcX(reIndex) + (PHONE_WIDTH - BUTTON_WIDTH) / 2;
     },
     easing: 'easeOutCubic',
     duration: 300,
@@ -64,7 +64,7 @@ function buildCircleAnimation(count) {
 }
 
 var stateCount = 0;
-let debugStartButton = document.getElementById('start-button');
+let debugStartButton = document.getElementById('screen');
 debugStartButton.addEventListener('click', () => {
   stateCount += 1;
   let ani = buildCircleAnimation(-stateCount);

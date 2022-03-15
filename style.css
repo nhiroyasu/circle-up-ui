@@ -7,7 +7,7 @@
 :root {
   /* iPhone13 */
   --aspect-ratio: 0.46208531;
-  --phone-width: 360px;
+  --phone-width: 300px;
   --phone-height: calc(var(--phone-width) / var(--aspect-ratio));
   --primary-color: #a4a3d9;
 }
@@ -33,6 +33,7 @@
 .screen {
   width: 100%;
   height: 100%;
+  user-select: none;
 }
 
 .contents {
@@ -99,26 +100,4 @@
   line-height: 60px;
   color: #333;
   letter-spacing: 0.1rem;
-}
-
-.debug-tool {
-  position: absolute;
-  margin: 16px;
-}
-
-.debug-button {
-  width: 180px;
-  height: 48px;
-  border-radius: 6px;
-  background-color: #333;
-  color: white;
-  text-align: center;
-  line-height: 48px;
-  cursor: pointer;
-  user-select: none;
-  transition: all 0.3s ease-in-out;
-}
-
-.debug-button:hover {
-  background-color: #000;
 }
